@@ -1,3 +1,3 @@
 <?php
-echo '<p>'.'Bonjour !'.'</p>';
+echo '<p>Bonjour !</p>';
 ?>
