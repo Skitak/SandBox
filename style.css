@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+#dynamique{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    border-radius: 20px;
+    width: 50%;
+    height: 200px;
+}
+
+mark {
+    font-style: italic;
+    color: firebrick ;
+    font-weight: bold;
+    background: none;
+}
+
+#dynamique h2 {
+    text-align: center;
+    color: blueviolet;
+    font-family: oswald;
+}
+
+#dynamique p {
+    width : 80%;
+    font-family: roboto;
+}
+.box {
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+    border: 2px black solid;
+    background-color: aqua;
+}
+
