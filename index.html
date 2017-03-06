@@ -13,28 +13,38 @@
 </head>
 
 <body>
-    <button id="majPremier">Mise à jour première zone</button><br /><br />
-    <div id="premier">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </div>
+    <section>
+        <h1>Test</h1>
+        <article class="contenu">
+            <button id="majPremier">Mise à jour première zone</button><br /><br />
+            <div id="premier">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <button id="action">Ajax request</button>
+        </article>
 
-    <button id="action">Ajax request</button>
+    </section>
+    
+    <section>
+        <h1>Abonnement</h1>
+        <article class="contenu">
+            <div id="abonnement">
+                <p> Vous voulez vous abonner à notre newsletter ? N'hésitez pas, c'est gratuit ! Tapez simplement vos coordonnées et le tour est joué !</p>
+                <form id="formabo" method="post" action="index.php?control=user&action=connect">
+                    <label for="name">nom  :   </label>
+                    <input name="name" value="" /> <br/>
 
-	<div id="abonnement">
-	<p> Vous voulez vous abonner à notre newsletter ? N'hésitez pas, c'est gratuit ! Tapez simplement vos coordonnées et le tour est joué !</p>
-	<form id="formabo" method="post" action="index.php?control=user&action=connect">
-		<label for="name">nom  :   </label>
-		<input name="name" value="" /> <br/>
-        
-		<label for="firstname">prénom :</label> 
-		<input name="firstname" value=""/> <br/>
-        
-		<label for="name">mail  :   </label>
-		<input type="email" name="mail" value="" /> <br/>
-        
-        <input type="button" />
-	</form>
-    </div>
+                    <label for="firstname">prénom :</label>
+                    <input name="firstname" value="" /> <br/>
+
+                    <label for="name">mail  :   </label>
+                    <input type="email" name="mail" value="" /> <br/>
+
+                    <input type="button" />
+                </form>
+            </div>
+        </article>
+    </section>
 </body>
 
 </html>
