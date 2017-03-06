@@ -7,6 +7,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="jqueryUI.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -23,9 +26,21 @@
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
     </div>
 
-    <script src="jquery.js"></script>
-    <script src="jqueryUI.js"></script>
-    <script src="script.js"></script>
+	<div id="abonnement">
+	<p> Vous voulez vous abonner à notre newsletter ? N'hésitez pas, c'est gratuit ! Tapez simplement vos coordonnées et le tour est joué !</p>
+	<form id="formabo" method="post" action="index.php?control=user&action=connect">
+		<label for="name">nom  :   </label>
+		<input name="name" value="" /> <br/>
+        
+		<label for="firstname">prénom :</label> 
+		<input name="firstname" value=""/> <br/>
+        
+		<label for="name">mail  :   </label>
+		<input type="email" name="mail" value="" /> <br/>
+        
+        <input type="button" />
+	</form>
+    </div>
 </body>
 
 </html>
