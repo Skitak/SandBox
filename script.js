@@ -3,7 +3,7 @@
           $('#premier').load('bonjour.php');
       });
 
-      $('#action').click(function () {
+      $('#action').click(function () {//Comme le prof le voulait
           $.ajax({
               type: 'GET',
               url: 'bonjour.php',
