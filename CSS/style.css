@@ -24,6 +24,11 @@ section {
     background-color: azure;
 }
 
+section h1 {
+    font-family: oswald;
+    font-size: 2.1em;
+}
+
 nav {
     width: 300px;
     height: 100%;
@@ -61,4 +66,36 @@ nav li:hover{
 
 #premier {
     background-color: #F6E497;
+}
+
+#surprise{
+    padding-top: 5%;
+    display: none;
+}
+
+.button{
+    width: 200px;
+    height: 50px;
+    margin-top: 5%;
+    border: none;
+    color: white;
+    background-color: red;
+    font-family: oswald;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: crimson;
+}
+
+.button:active{
+    background-color: lightcoral;
+}
+
+p:nth-child(5){
+    padding-top: 5%;
+    color: blue;
+    font-family: oswald;
+    font-size: 5em;
 }
