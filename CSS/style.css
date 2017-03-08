@@ -94,10 +94,9 @@ nav li:hover{
 }
 
 p:nth-child(5){
-    padding-top: 5%;
     color: blue;
     font-family: oswald;
-    font-size: 5em;
+    font-size: 20px;
 }
 
 .bloc {
