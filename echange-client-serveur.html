@@ -1,7 +1,25 @@
-<h1>Trucs à faire ici</h1>
+<script src="JS/echange-php.js"></script>
+<h1>Echange avec un script php et réponse en json</h1>
+<article id="echange">
+    <form action="connexion.php">
+        <fieldset>
+            <legend>Login:</legend>
+            Pseudo:<br>
+            <input type="text" name="Pseudo">
+            <br> Password:<br>
+            <input type="password" name="Password"><br><br>
+            <input type="submit" value="Connexion">
+            <p id="error">Mauvais mot de passe</p>
+        </fieldset>
+    </form>
 
-<article class="contenu">
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+    <div id="chat">
+        <input type="text" name="Message" id="messageInput">
+        <div id="messages">
+            <p>hola</p>
+            <p>mdrrrr</p>
+            <p>xd</p>
+        </div>
+    </div>
+
 </article>
