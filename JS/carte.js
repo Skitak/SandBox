@@ -13,10 +13,11 @@ $(function () {
     }).addTo(map);
     var marker = L.marker([48.841500, 2.268000]).addTo(map);
     marker.bindPopup("48.841500, 2.268000").openPopup();
-    map.click(function(e){
-        marker.setLatLng(e);
-    });
 
+    map.on('click', function(e){
+        marker.setLatLng(e.latlng);
+        marker.bindPopup(e.latlng.lat + ", " + e.latlng.lng).openPopup();
+    });
 });
 
 //Leaflet et mapquest dans l'ordre.
