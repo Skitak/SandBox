@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/anim.css" />
     <link rel="stylesheet" href="CSS/fonts.css" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
     <script src="JS/jquery.js"></script>
     <script src="JS/jqueryUI.js"></script>
     <script src="JS/menu.js"></script>
@@ -26,37 +27,18 @@
             <li>Evénements et interaction utilisateur</li>
         </ul>
     </nav>
-    <!--<section>
-        <h1>Test</h1>
-        <article class="contenu">
-            <button id="majPremier">Mise à jour première zone</button><br /><br />
-            <div id="premier">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </div>
-            <button id="action">Ajax request</button>
-        </article>
 
-    </section> -->
-    
+
     <section id="body">
-        <h1>Abonnement</h1>
-        <article class="contenu">
-            <div id="abonnement">
-                <p> Vous voulez vous abonner à notre newsletter ? N'hésitez pas, c'est gratuit ! Tapez simplement vos coordonnées et le tour est joué !</p>
-                <form id="formabo" method="post" action="index.php?control=user&action=connect">
-                    <label for="name">nom  :   </label>
-                    <input name="name" value="" /> <br/>
+        <script src="leaflet/leaflet.js"></script>
+        <script src="JS/carte.js"></script>
 
-                    <label for="firstname">prénom :</label>
-                    <input name="firstname" value="" /> <br/>
+        <h1>Carte intéractive</h1>
 
-                    <label for="name">mail  :   </label>
-                    <input type="email" name="mail" value="" /> <br/>
-
-                    <input type="button" />
-                </form>
-            </div>
+        <article id="carte">
+            <div id="map"></div>
         </article>
+
     </section>
 </body>
 

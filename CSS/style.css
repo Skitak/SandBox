@@ -153,3 +153,9 @@ p:nth-child(5){
     position: fixed;
     background-color: red;
 }
+
+#map{
+    min-height: 800px;
+    min-width: 700px;
+    max-width: 10000px;
+}
