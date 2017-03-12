@@ -6,7 +6,7 @@ $(function () {
     $("form input[type=text]").focus();
     $("input[type=submit]").click(function () {
 
-       /* $.ajax({
+        $.ajax({
             type: 'POST',
             dataType: "text",
             url: $("form").attr('action'),
@@ -14,17 +14,20 @@ $(function () {
                 if (data == "Ok") {
                     $("form").css('display', 'none');
                     $("#messageInput").prop('disabled', false);
-                } else
+                } else{
+                    alert(data);
                     $("#error").fadeIn("slow", function () {
+                        $("#error").text(data);
                         $("#error").delay(2000).fadeOut("slow")
                     });
+                }
             },
 
             error: function (data) {
-                alert(data);
+                alert("Error");
             }
-        });*/
-        $('section').load("chat.html");
+        });
+        //$('section').load("chat.html");
         return false;
     });
 

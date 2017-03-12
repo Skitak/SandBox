@@ -140,10 +140,12 @@ p:nth-child(5){
 }
 
 #chat {
-    display: flex;
+    display: none;
     max-height: 80%;
     padding-left: 10%;
-    width: 60%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    width: 80%;
     flex-direction: column-reverse;
     font-size: 20px;
 }
