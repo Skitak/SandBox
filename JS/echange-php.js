@@ -6,7 +6,7 @@ $(function () {
     $("form input[type=text]").focus();
     $("input[type=submit]").click(function () {
 
-        $.ajax({
+       /* $.ajax({
             type: 'POST',
             dataType: "text",
             url: $("form").attr('action'),
@@ -23,9 +23,10 @@ $(function () {
             error: function (data) {
                 alert(data);
             }
-        });
+        });*/
+        $('section').load("chat.html");
         return false;
-    })
+    });
 
 
 });
