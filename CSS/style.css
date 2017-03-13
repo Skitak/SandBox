@@ -90,11 +90,11 @@ nav li:hover{
     background-color: lightcoral;
 }
 
-p:nth-child(5){
+/*p:nth-child(5){
     color: blue;
     font-family: oswald;
     font-size: 20px;
-}
+}*/
 
 .bloc {
     width : 120px;
@@ -160,4 +160,9 @@ p:nth-child(5){
     height: 500px;
     width: 700px;
     display: block;
+}
+
+#messages {
+    display: flex;
+    flex-direction : column-reverse
 }

@@ -1,13 +1,13 @@
 <script src="JS/echange-php.js"></script>
 <h1>Echange avec un script php et réponse en json</h1>
 <article id="echange">
-    <form action="connexion.php">
+    <form action="PHP/connexion.php">
         <fieldset>
-            <legend>Connextion au chat:</legend>
+            <legend>Connexion au chat:</legend>
             Login:<br>
-            <input type="text" name="Login">
+            <input type="text" name="Login" id="Login" value="Peon">
             <br> Password:<br>
-            <input type="password" name="Password"><br><br>
+            <input type="password" name="Password" id="Password" value="Peon"><br><br>
             <input type="submit" value="Connexion">
             <p id="error">Mauvais mot de passe</p>
         </fieldset>
@@ -16,9 +16,6 @@
     <div id="chat">
         <input type="text" name="Message" id="messageInput">
         <div id="messages">
-            <p>hola</p>
-            <p>mdrrrr</p>
-            <p>xd</p>
         </div>
     </div>
 
