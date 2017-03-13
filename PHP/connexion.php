@@ -8,7 +8,7 @@ try{
 //$bdd = mysqli_connect($host_name, $user_name, $password, $database);
     $bdd = new PDO('mysql:host=localhost;dbname=PW;charset=utf8', 'root', '');
     $rep = $bdd->query("SELECT * FROM utilisateur WHERE Username = '" . $user . "'");
-    if ($rep == false){
+    if ($rep->rowCount() === 0){
         $query = $bdd->prepare("insert into utilisateur(Username,Password) values (?,?)");
         $query->bindParam(1,$user);
         $query->bindParam(2,$pass);

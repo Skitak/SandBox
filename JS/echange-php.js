@@ -56,6 +56,8 @@ function showMessages() {
                 div.append("<p><em>" + data[i].pseudo + "</em> - " + data[i].message + "</p>");
                 ++i;
             }
+            
+            setTimeout(showMessages,5000);
         },
         error: function (e) {
             alert("pb when reading messages");
